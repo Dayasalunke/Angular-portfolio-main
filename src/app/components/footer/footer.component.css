@@ -1,0 +1,22 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.social-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    color: #ffc107 !important;
+}
+
+@media (max-width: 767.98px) {
+    .social-links {
+        margin-top: 1rem;
+    }
+}

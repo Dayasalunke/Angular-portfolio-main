@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" routerLink="/">
+            <span class="text-warning">DAYA</span><span class="text-white">NAND</span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+            <i class="bi bi-list text-white fs-2"></i>
+        </button>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse" [class.show]="isMenuOpen">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="" routerLinkActive="active" 
+                       [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">
+                       <i class="bi bi-house-door me-1"></i>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="about" routerLinkActive="active" 
+                       (click)="closeMenu()">
+                       <i class="bi bi-person me-1"></i>About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="skills" routerLinkActive="active" 
+                       (click)="closeMenu()">
+                       <i class="bi bi-gear me-1"></i>Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="projects" routerLinkActive="active" 
+                       (click)="closeMenu()">
+                       <i class="bi bi-code-square me-1"></i>Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="contact" routerLinkActive="active" 
+                       (click)="closeMenu()">
+                       <i class="bi bi-envelope me-1"></i>Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
